@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Rana - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Deep Rana</h1>
+                <p>Computer Science Student | Developer | Data Science Enthusiast</p>
+            </div>
+            <div style="margin-top: 3rem;">
+                <button style="margin-right: 1rem; background-color: transparent; color: #ffffff; border: 2px solid #4a90e2; padding: 0.8rem 2rem; border-radius: 6px; cursor: pointer;" 
+                        onmouseover="this.style.backgroundColor='#4a90e2'; this.style.color='#ffffff';" 
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#ffffff';" 
+                        onclick="window.open('Deep_Rana_Resume.pdf', '_blank')">My Resume</button>
+                <button style="background-color: transparent; color: #ffffff; border: 2px solid #4a90e2; padding: 0.8rem 2rem; border-radius: 6px; cursor: pointer;" 
+                        onmouseover="this.style.backgroundColor='#4a90e2'; this.style.color='#ffffff';" 
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#ffffff';" 
+                        onclick="window.open('https://linkedin.com/in/deep-rana', '_blank')">My LinkedIn</button>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="about-section">
+                <img src="booty.jpg" alt="Deep Rana" class="profile-image">
+                <div class="about-content">
+                    <h2>About Me 🙂‍</h2>
+                    <p>Hello! My name is Deep Rana. I am a Computer Science student at DePaul University with a minor in Data Science. I'm passionate about software development and data analysis, with experience in various programming languages and frameworks. Currently seeking opportunities to apply my technical skills in a professional setting through an internship or full-time role.</p>
+                    <p>Based in Aurora, IL, I'm currently pursuing my Bachelor's degree. My coursework includes Data Structures & Algorithms, Discrete Mathematics, Data Analysis & Regression, etc., providing me with a strong foundation in both theoretical and practical aspects of computer science. I am very eager to put myself in new experiences and learn new skills that can make me a better asset
+                        in this ever-evolving field. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projects 👩🏻‍💻</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>UniVerse: A Student Rental & Marketplace Web App</h3>
+                    <p id="universe-description" class="collapsed">
+                        A web platform built with Python/Django, HTML/CSS/Javascript, PostgreSQL, and Bootstrap while using Docker and Git to facilitate team work. The platform enables... students to rent and list housing and school supplies, as well as find/match with potential roommates. Included authentication, search, filtering features, matching algorithms, and more.
+                    </p>
+                    <button id="universe-toggle" class="read-more-btn" onclick="toggleDescription()">Read More</button>
+                </div>
+                <div class="project-card">
+                    <h3>Stock Exchange Trading System</h3>
+                    <p>Developed a professional-grade trading system in Java using various design patterns, featuring price management, trading operations, and real-time market data publication.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Backend for Search Engine</h3>
+                    <p>Collaborated on developing backend code for a search engine using Python, implementing efficient algorithms for indexing and querying large datasets.</p>
+                </div>
+                <div class="project-card">
+                    <h3>
+                        My Github
+                        <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" alt="GitHub Logo" class="github-logo">
+                    </h3>
+                    <p>Find source code and documentation for my projects here.</p>
+                    <button onclick="window.open('https://github.com/DPRNA', '_blank')">Visit Github</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Experience 💼</h2>
+            <div class="experience-item">
+                <h3>Information Technology Technician</h3>
+                <p>SONOVA GROUP USA | June 2022 - Aug 2022</p>
+                <ul>
+                    <li>Conducted diagnostics and maintenance of hearing aid devices</li>
+                    <li>Managed order entry processes and streamlined workflows</li>
+                    <li>Assisted with integration of behind-the-ear devices and FM technology</li>
+                    <li>Supported invoicing processes and quality assurance</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 style="margin-bottom: 0.5rem;">Technical Skills 🧠</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Languages & Frameworks</h3>
+                    <p>Java, Python, Django, C/C++, HTML/CSS, JavaScript, SQL, R, Kotlin</p>
+                </div>
+                <div>
+                    <h3>Tools & Technologies</h3>
+                    <p>Docker, Git, PyCharm, VS Code, Eclipse, Oracle SQL Developer, Android Studio</p>
+                </div>
+                <div>
+                    <h3>Other Skills</h3>
+                    <p>Project Management, Software Testing, Critical Thinking, Fluent in Gujarati</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contact Me 📞</h2>
+<!--             <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form> -->
+            <form target="_blank" action="https://formsubmit.co/rana10deep@gmail.com" method="POST">
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="col">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+              </form>
+            <div class="social-links">
+                <a href="tel:224-817-7427">Phone: (224)-817-7427</a>
+                <a href="mailto:rana10deep@gmail.com">Email: rana10deep@gmail.com</a>
+                <a href="https://linkedin.com/in/deep-rana" target="_blank">My LinkedIn</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleDescription() {
+            const description = document.getElementById('universe-description');
+            const toggleButton = document.getElementById('universe-toggle');
+    
+            if (description.classList.contains('collapsed')) {
+                description.classList.remove('collapsed');
+                description.classList.add('expanded');
+                toggleButton.textContent = 'Read Less';
+            } else {
+                description.classList.remove('expanded');
+                description.classList.add('collapsed');
+                toggleButton.textContent = 'Read More';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
