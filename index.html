@@ -6,6 +6,7 @@
     <title>Deep Rana - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="container">
@@ -131,22 +132,10 @@
         </section>
     </div>
 
-    <script>
-        function toggleDescription() {
-            const description = document.getElementById('universe-description');
-            const toggleButton = document.getElementById('universe-toggle');
-    
-            if (description.classList.contains('collapsed')) {
-                description.classList.remove('collapsed');
-                description.classList.add('expanded');
-                toggleButton.textContent = 'Read Less';
-            } else {
-                description.classList.remove('expanded');
-                description.classList.add('collapsed');
-                toggleButton.textContent = 'Read More';
-            }
-        }
-    </script>
+    <button id="back-to-top" onclick="scrollToTop()">
+        <img src="images/arrow.png" alt="Back to Top" class="back-to-top-icon">
+    </button>
+
 </body>
 </html>
 

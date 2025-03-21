@@ -211,3 +211,42 @@ ul li::before {
     text-decoration: underline;
     padding: 0;
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#back-to-top.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+
+#back-to-top:hover {
+    background-color: #357abd;
+    transform: translateY(-3px);
+}
+
+.back-to-top-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: auto;
+}
