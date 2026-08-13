@@ -1,6 +1,5 @@
-function toggleDescription() {
-    const description = document.getElementById('universe-description');
-    const toggleButton = document.getElementById('universe-toggle');
+function toggleDescription(descriptionId, toggleButton) {
+    const description = document.getElementById(descriptionId);
 
     if (description.classList.contains('collapsed')) {
         description.classList.remove('collapsed');
