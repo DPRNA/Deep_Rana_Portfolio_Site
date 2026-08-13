@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Rana - Portfolio</title>
+    <title>Deep Rana - Data Analyst Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="media-queries.css">
@@ -14,7 +14,7 @@
         <header>
             <div class="header-content">
                 <h1>Deep Rana</h1>
-                <p>Computer Science Student | Developer | Data Science Enthusiast</p>
+                <p>Data Analyst | Power BI &amp; SQL | ETL &amp; Business Intelligence</p>
             </div>
             <div style="margin-top: 3rem;">
                 <button style="margin-right: 1rem; background-color: transparent; color: #ffffff; border: 2px solid #4a90e2; padding: 0.8rem 2rem; border-radius: 6px; cursor: pointer;" 
@@ -33,10 +33,20 @@
                 <img src="images/me.jpg" alt="Deep Rana" class="profile-image">
                 <div class="about-content">
                     <h2>About Me 🙂‍</h2>
-                    <p>Hello! My name is Deep Rana. I am a recent Computer Science graduate from DePaul University with a minor in Data Science. I'm passionate about software development and data analysis, with experience in various programming languages and frameworks. Currently seeking opportunities to apply my technical skills in a professional setting through a full-time role.</p>
-                    <p>Based in Aurora, IL, I recently worked as a Software Engineer at Swing Phi LLC and as an Information Technology Technician at Sonova Group USA. My coursework includes Data Structures & Algorithms, Discrete Mathematics, Data Analysis & Regression, etc., providing me with a strong foundation in both theoretical and practical aspects of computer science. 
-                        I am very eager to put myself in new experiences and learn new skills that can make me a better asset in this ever-evolving field. </p>
+                    <p>Hello! My name is Deep Rana. I'm a recent Computer Science graduate (minor in Data Science) from DePaul University who has built production Power BI dashboards and ETL pipelines supporting live business systems. I'm skilled in SQL, Python, and Power BI (DAX), with experience turning large scale datasets into actionable insights for engineering, product, and operations teams. I'm seeking an entry level analyst role where I can make a meaningful impact.</p>
+                    <p>Based in the Chicago, IL area, I most recently worked as a Data Analytics Intern at Swing Phi LLC and as an IT & QA Technician at Sonova Group USA. My coursework includes Data Analysis & Regression, Data Structures & Algorithms, Software Testing, and Advanced Data Analysis, giving me a strong foundation in both the theoretical and practical sides of turning data into decisions.</p>
                 </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education 🎓</h2>
+            <div class="experience-item">
+                <h3>B.S. Computer Science, Minor: Data Science</h3>
+                <p>DePaul University, Chicago, IL | GPA: 3.5 | September 2021 to June 2025</p>
+                <ul>
+                    <li>Relevant Coursework: Data Analysis & Regression, Data Structures & Algorithms, Software Testing, Advanced Data Analysis</li>
+                </ul>
             </div>
         </section>
 
@@ -44,19 +54,28 @@
             <h2>Projects 👩🏻‍💻</h2>
             <div class="projects">
                 <div class="project-card">
-                    <h3>UniVerse: A Student Rental & Marketplace Web App</h3>
+                    <h3>UniVerse: Student Rental & Marketplace Platform</h3>
+                    <p>Python, Django, PostgreSQL</p>
                     <p id="universe-description" class="collapsed">
-                        A web platform built with Python/Django, HTML/CSS/Javascript, PostgreSQL, and Bootstrap while using Docker and Git to facilitate team work. The platform enables... students to rent and list housing and school supplies, as well as find/match with potential roommates. Included authentication, search, filtering features, matching algorithms, and more.
+                        Designed relational data models in PostgreSQL to support listings, rentals, and roommate matching, and wrote SQL queries to power search and recommendation features. Collaborated with a team to translate functional requirements into backend logic and validated application functionality using synthetic and test datasets to simulate real world usage.
                     </p>
-                    <button id="universe-toggle" class="read-more-btn" onclick="toggleDescription()">Read More</button>
+                    <button class="read-more-btn" onclick="toggleDescription('universe-description', this)">Read More</button>
                 </div>
                 <div class="project-card">
-                    <h3>Stock Exchange Trading System</h3>
-                    <p>Developed a professional-grade trading system in Java using various design patterns, featuring price management, trading operations, and real-time market data publication.</p>
+                    <h3>E Commerce Sales Analysis</h3>
+                    <p>Python, SQL, Power BI</p>
+                    <p id="ecommerce-description" class="collapsed">
+                        Analyzed 100,000+ order records from a Brazilian e commerce platform to identify revenue trends, high value customer segments, and delivery inefficiencies across 27 states. Designed a PostgreSQL database with 6 normalized tables and wrote complex SQL queries (joins, window functions) to answer business questions on seasonality, customer lifetime value, and geographic sales concentration. Built an interactive Power BI dashboard with 12+ DAX measures tracking revenue growth, product category performance, and delivery time impact on customer satisfaction, enabling drill down by region, payment type, and time period.
+                    </p>
+                    <button class="read-more-btn" onclick="toggleDescription('ecommerce-description', this)">Read More</button>
                 </div>
                 <div class="project-card">
-                    <h3>Backend for Search Engine</h3>
-                    <p>Collaborated on developing backend code for a search engine using Python, implementing efficient algorithms for indexing and querying large datasets.</p>
+                    <h3>Superstore Sales & Returns Analysis</h3>
+                    <p>Power BI, DAX</p>
+                    <p id="superstore-description" class="collapsed">
+                        Designed an executive level Power BI dashboard analyzing sales performance, return rates, and profitability across product categories, regions, and sales managers to support strategic self service analytics. Authored 10+ custom DAX measures including return rate %, returned revenue impact, gross margin, and YoY growth. Built cross filtering slicers, drill down hierarchies, and KPI cards to surface high return product categories and key profit drivers at a glance.
+                    </p>
+                    <button class="read-more-btn" onclick="toggleDescription('superstore-description', this)">Read More</button>
                 </div>
                 <div class="project-card">
                     <h3>
@@ -72,24 +91,24 @@
         <section class="section">
             <h2>Experience 💼</h2>
             <div class="experience-item">
-                <h3>Software Engineer Intern</h3>
-                <p>Swing Phi LLC | Nov 2024 - Jan 2025 | Remote, United States</p>
+                <h3>Data Analytics Intern</h3>
+                <p>Swing Phi LLC | Nov 2024 - Jan 2025 | Aurora, IL (Remote)</p>
                 <ul>
-                    <li>Contributed to the development of a web-based trading platform that delivers valuable insights to retail investors. </li>
-                    <li>Helped implement a real-time stock screening dashboard with advanced filtering, technical analysis alerts, and AI-powered market event interpretations. </li>
-                    <li>Supported backend development for admin tools including system monitoring, user analytics, and automated model management. </li>
-                    <li>Collaborated with cross-functional teams to refine UI wireframes and optimize data pipelines for real-time insights.</li>
+                    <li>Built 3 Power BI dashboards surfacing system usage and performance metrics for a 6 person engineering team, cutting manual data pulls by roughly 5 hours per week.</li>
+                    <li>Designed and maintained ETL workflows processing real time stock market data and news feeds from 4+ sources, sustaining about 99% data accuracy for downstream analytics and alerting systems.</li>
+                    <li>Partnered with engineering and product stakeholders across 2 sprint cycles to clarify data requirements, shortening insight delivery turnaround by an estimated 20%.</li>
+                    <li>Developed automated pipelines generating trading indicators and alerts for a live screening platform used by an estimated 500+ retail investors.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <h3>Information Technology Technician</h3>
-                <p>SONOVA GROUP USA | June 2022 - Aug 2022 | Aurora, Illinois</p>
+                <h3>IT & QA Technician</h3>
+                <p>Sonova Group USA | June 2022 - Aug 2022 | Aurora, Illinois</p>
                 <ul>
-                    <li>Assisted engineer with executing Universal UR10E Robot Programming to improve warehouse packaging processes of hearing aids and their accessories.</li>
-                    <li>Conducted firsthand diagnostics and maintenance of hearing aid devices, ensuring functionality and reliability.</li>
-                    <li>Assisted with integration of behind-the-ear devices and FM technology</li>
-                    <li>Assisted with the integration and troubleshooting of behind-the-ear devices, FM technology, and other hardware components. </li>
+                    <li>Executed structured diagnostics and QA testing on approximately 50+ electronic devices per day, logging results that identified recurring failure patterns and informed process improvement decisions.</li>
+                    <li>Maintained accurate operational records and compliance documentation across 100% of testing cycles, preserving data integrity for internal audits.</li>
+                    <li>Helped automate 3+ repetitive workflows, reducing manual intervention in device processing by an estimated 15%.</li>
+                    <li>Partnered with an engineer to deploy a Universal Robots UR10E robotic arm, improving packaging throughput by roughly 20% and reducing line error rates.</li>
                 </ul>
             </div>
         </section>
@@ -98,16 +117,24 @@
             <h2 style="margin-bottom: 0.5rem;">Technical Skills 🧠</h2>
             <div class="skills-grid">
                 <div>
-                    <h3>Languages & Frameworks</h3>
-                    <p>Java, Python, Django, C/C++, HTML/CSS, JavaScript, SQL, R, Kotlin</p>
+                    <h3>Programming & Querying</h3>
+                    <p>Python, SQL, R, Java</p>
                 </div>
                 <div>
-                    <h3>Tools & Technologies</h3>
-                    <p>Docker, Git, PyCharm, VS Code, Eclipse, Oracle SQL Developer, Android Studio</p>
+                    <h3>Data Analysis</h3>
+                    <p>Pandas, NumPy, Regression Analysis, Statistical Analysis, Data Cleaning, Data Transformation</p>
                 </div>
                 <div>
-                    <h3>Other Skills</h3>
-                    <p>Project Management, Software Testing, Critical Thinking, Fluent in Gujarati</p>
+                    <h3>Visualization & BI</h3>
+                    <p>Power BI (DAX, Power Query), Excel, Matplotlib</p>
+                </div>
+                <div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>KPI Development, Dashboard Design, Business Metrics, Time Series Analysis, Data Storytelling</p>
+                </div>
+                <div>
+                    <h3>Other</h3>
+                    <p>PostgreSQL, SAS, Git, Django, Jira, Selenium, Agile Methodologies, MS Office</p>
                 </div>
             </div>
         </section>
@@ -150,7 +177,3 @@
 
 </body>
 </html>
-
-
-
-
